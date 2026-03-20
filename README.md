@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# TP React – JSX, Composition et Tests
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objectifs
+- Comprendre JSX et sa transformation en JavaScript pur.
+- Créer des composants réutilisables avec HOC (Higher-Order Component) et Render Props.
+- Écrire des tests unitaires et d’intégration avec Jest et Testing Library.
 
-## Available Scripts
+## Résultat final
+L’application affiche :
 
-In the project directory, you can run:
 
-### `npm start`
+![WhatsApp Image 2026-03-20 at 13 39 24](https://github.com/user-attachments/assets/201a69d8-0595-49bc-ab14-ae5ad35b75df)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **JSX** : deux titres (`Bienvenue avec JSX` et `Bienvenue en JavaScript natif`) + un champ `Votre prénom :`
+- **HOC** : un bouton `Envoyer le formulaire` qui déclenche une alerte (`Formulaire envoyé (simulation)`)
+- **Render Props** : une liste de prénoms (`Amine`, `Leila`, `Karim`, `Sofia`)
+- **Compteur** : un compteur cliquable avec affichage du nombre de clics
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## *L’alerte au clic sur le bouton* :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![WhatsApp Image 2026-03-20 at 13 38 55](https://github.com/user-attachments/assets/d33e6036-a557-4380-ab42-b1b7388095d6)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tests:
+Les tests unitaires et d’intégration ont été écrits et passent avec succès.
+<img width="358" height="176" alt="image" src="https://github.com/user-attachments/assets/a6c601ab-4493-41ed-b274-b1526f849203" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Conclusion
+Le TP a permis de mettre en œuvre :
+- La syntaxe JSX et son équivalent JavaScript pur.
+- Un HOC `withTracker` pour logguer les props.
+- Un composant `DataProvider` utilisant Render Props pour afficher une liste dynamique.
+- Des tests avec React Testing Library.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
